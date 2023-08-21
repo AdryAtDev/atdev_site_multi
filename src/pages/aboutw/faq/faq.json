@@ -1,0 +1,34 @@
+{
+  "title": {
+    "en": "FAQ",
+    "es": "Preguntas más frecuentes"
+  },
+  "description": {
+    "en": "Frequently Asked Questions",
+    "es": "Preguntas más frecuentes"
+  },
+  "questionFirstColumn": {
+    "en": [
+      {question: "Can I track my order?", answer: "Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 15 minutes after your order is placed. Within a few hours of you placing your order, you will receive an expected delivery time. When the order will be ready for delivery, you will receive another email with the tracking number and a link to trace the order online with the courier."},
+      {question: "How can I change something in my order?", answer: "If you need to change something in your order, please contact us immediately. We usually process orders within 30 minutes, and once we have processed your order, we will be unable to make any changes."},
+      {question: "How can I pay for my order?", answer: "We accept Visa, MasterCard, and American Express credit and debit cards for your convenience."}
+    ],
+    "es": [
+      {question: "¿Puedo rastrear mi pedido?", answer: "¡Sí, puede hacerlo! Después de realizar su pedido, recibirá una confirmación del pedido por correo electrónico. Cada pedido comienza la producción 15 minutos después de realizar su pedido. Dentro de unas pocas horas de Al realizar su pedido, recibirá un tiempo de entrega esperado. Cuando el pedido esté listo para la entrega, recibirá otro correo electrónico con el número de seguimiento y un enlace para rastrear el pedido en línea con el servicio de mensajería."},
+      {question: "¿Cómo puedo cambiar algo en mi pedido?", answer: "Si necesita cambiar algo en su pedido, comuníquese con nosotros de inmediato. Por lo general, procesamos los pedidos en 30 minutos, y una vez que hayamos procesado su pedido, lo haremos ser incapaz de hacer ningún cambio."},
+      {question: "¿Cómo puedo pagar mi pedido?", answer: "Aceptamos tarjetas de crédito y débito Visa, MasterCard y American Express para su comodidad."}
+    ]
+  },
+  "questionSecondColumn": {
+    "en": [
+      {question: "When will my order be delivered?", answer: "Delivery times will depend on your location. Once payment is confirmed your order will be packaged. Delivery can be expected within 10 business days."},
+      {question: "Can I return an item?", answer: "Please contact our administrators for more information on returning products purchased on our website."},
+      {question: "Do you provide any scripts?", answer: "Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are inactive. Basic scripts can be easily added at www.TemplateTuning.com If you are not sure that the element you’re interested in is active please contact our Support Chat for clarification."}
+    ],
+    "es": [
+      {question: "¿Cuándo se entregará mi pedido?", answer: "Los tiempos de entrega dependerán de su ubicación. Una vez confirmado el pago, su pedido será empaquetado. La entrega se puede esperar dentro de los 10 días hábiles."},
+      {question: "¿Puedo devolver un artículo?", answer: "Póngase en contacto con nuestros administradores para obtener más información sobre la devolución de productos comprados en nuestro sitio web."},
+      {question: "¿Proporciona algún script?", answer: "Nuestras plantillas no incluyen scripts adicionales. Las suscripciones a boletines, campos de búsqueda, foros, galerías de imágenes (en versiones HTML de productos Flash) están inactivas. Los scripts básicos se pueden agregar fácilmente en www.TemplateTuning.com. Si no está seguro de que el elemento que le interesa esté activo, comuníquese con nuestro chat de soporte para obtener aclaraciones."}
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+---
+layout: 'layouts/base.njk'
+banner_img: "/img/Background-Images/Background-Recruiting.png"
+id: aboutw/our-team.html
+pagination:
+    data: languages
+    size: 1
+    alias: language
+permalink: "pages/{{ language.lang | slugify }}/{{id}}"
+---
+
+<style>
+	.banner {
+		background: url({{ banner_img }}) no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		-ms-background-size: cover;
+		min-height: 480px;
+	}
+
+	.masthead {
+		height: 65vh;
+		min-height: 300px;
+		background-image: url("{{ banner_img }}");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.row.h-100.align-items-center {
+		display: flex !important;
+		align-items: end !important;
+	}
+
+	.col-12.text-center {
+		min-width: 60%;
+	}
+
+  .member-name-dev {
+    color: #1074BE !important;
+  }
+  .member-name-dev:hover {
+    color: #535B70 !important;
+  }
+</style>
+
+{% macro member_macro(name, img, position, icon, linkedIn) %}
+<div class="col-lg-3 col-sm-6 col-12 item animate-item" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+  <!-- Begin team item -->
+  <div class="team-item item-style member-name-dev">
+    <div class="team-item-img aspect-ratio">
+      <img height="500" class="lazy img-cover" style="width: unset;" src="{{img}}" alt="img" data-loaded="true">
+		</div>
+    <div class="team-item-info">
+      <h4 class="team-item-heading item-heading" style="margin-bottom: 0.6rem;">{{name}}</h4>
+      <div class="team-item-position" style="margin-bottom: 0.4rem;">{{position}}</div>
+			<a href="{{linkedIn}}">
+				<img src="{{icon}}" width="40" alt="{{linkedIn}}">
+			</a>
+		</div>
+	</div><!-- End team item -->
+</div>
+{% endmacro %}
+
+<!-- Begin main banner -->
+<div class="section-bg main-banner" style="box-shadow: 0 10px 6px rgba(0, 33, 41, 0.13295)">
+	<div class="main-banner-slider reduce-banner-height" data-flickity='{ "bgLazyLoad": 0, "bgLazyLoad": false, "fade": true, "prevNextButtons": false, "autoPlay": 6000, "pauseAutoPlayOnHover": false }'>
+		<div class="main-banner-slider-item" style=" background-image: url('{{banner_img}}');">
+			<div class="container">
+				<div class="row" style="margin-top: 0.1rem !important">
+					<div class="col">
+						<div class="main-banner-content">
+							<h2 class="main-banner-title">{{title[locale]}}</h2>
+							<div class="main-banner-desc">
+								<p>{{banner_title[locale]}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End main banner -->
+
+<!-- Begin main content -->
+<div class="main-content">
+	<div class="container">
+		<div class="section section-226 section-animate-items" data-body-columns="4" id="section-226">
+    	<div class="container">
+        <div class="row items">
+          <header class="col-12">
+            <div class="section-heading heading-center section-heading-animate" style="opacity: 1;">
+				      <div class="section-subheading" style="font-size: 1.1rem; color: #535B70;">{{ team_subheading[locale] | safe}}</div>
+              <h2 class="h1" style="font-size: 2.4rem; color: #1074BE;">{{ team_title[locale] | safe}}</h2>
+            </div>
+		      </header>
+          <div class="col-12 item">
+            <div class="row items"> 
+              {% for member in about.about_our_team.team %}
+                {{member_macro(member.name, member.img, member.position, member.icon, member.linkedIn)}}
+              {% endfor %}
+            </div>
+          </div>              
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+<!-- End main content -->

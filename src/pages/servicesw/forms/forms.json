@@ -1,0 +1,76 @@
+{
+  "title": {
+    "en": "Services Forms",
+    "es": "Formularios de Servicios"
+  },
+  "description": {
+    "en": "Services Forms",
+    "es": "Formularios de Servicios"
+  },
+  "thanks": {
+    "en": "Thank you for your interest in ATDEV. We’d like to ask you a few questions to get to know you and your requirements better.",
+    "es": "Gracias por tu Interés en ATDEV. Nos gustaría hacerte algunas preguntas para conocer mejor tus necesidades."
+  },
+  "name": {
+    "en": "Your Name",
+    "es": "Nombre"
+  },
+  "email": {
+    "en": "Your Email",
+    "es": "Email"
+  },
+  "btn_action": {
+    "en": "/pages/en/thanks/",
+    "es": "/pages/es/thanks/"
+  },
+  "service": {
+    "selectService": {
+      "en": "Select Your Service",
+      "es": "Selecciona un Servicio"
+    },
+	  "selectOption": {
+      "en": "--- Select an Option ---",
+      "es": "--- Selecciona una Opción ---"
+    },
+	  "selectOther": {
+      "en": "Other",
+      "es": "Otro"
+    },
+	  "staffAugmentation": {
+      "en": "Staff Augmentation",
+      "es": "Dotación de Personal"
+    },
+	  "recruiting": {
+      "en": "Recruiting",
+      "es": "Reclutamiento"
+    },
+	  "customDevelopment": {
+      "en": "Custom Development",
+      "es": "Desarrollo Personalizado"
+    }
+  },
+  "positionInterestedIn": {
+    "en": "Position Interested In",
+    "es": "Posición de Interés"
+  },
+  "technologiesTitle": {
+    "en": "Technologies",
+    "es": "Tecnologías"
+  },
+  "message": {
+    "otherComments": {
+      "en": "Other Comments",
+      "es": "Comentarios"
+    },
+	  "sendMessage": {
+      "en": "Send Message",
+      "es": "Enviar Mensaje"
+    }
+  },
+  "aside": {
+    "hireSpecialists": {
+      "en": "Hire Specialists",
+      "es": "Contrata Especialistas"
+    }
+  }
+}

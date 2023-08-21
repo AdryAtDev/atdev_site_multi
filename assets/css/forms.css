@@ -1,0 +1,73 @@
+#services-forms-container {
+    display: grid;
+    grid-template-columns: auto 30%;
+    color: #535b70 !important;
+}
+
+#services-forms-container h3 {
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+#services-forms-container aside {
+    min-height: 100vh;
+    position: relative;
+}
+
+.bg-image-aside {
+    min-height: 200vh;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+    transform: scaleX(1);
+}
+
+.bg-text-aside {
+    background: rgb(64,141,204, 0.8);
+    background: -moz-linear-gradient(70deg, rgb(63, 142, 252) 0, rgba(40, 118, 226, 0.4) 100%);
+    background: -webkit-linear-gradient(70deg, rgb(63, 142, 252) 0, rgba(40, 118, 226, 0.4) 100%);
+    background: linear-gradient(70deg, rgb(63, 142, 252) 0, rgba(40, 118, 226, 0.4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= "#408dcc",endColorstr="#40bce0",GradientType=1);
+    color: #ecf2f2;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.comma-separation{
+opacity: 0 !important;
+}
+
+.services-forms-radio-service-input {}
+
+.services-forms-radio-service-label {
+    margin-right: 12px;
+}
+
+@media only screen and (max-width: 900px) {
+    #services-forms-container {
+        grid-template-columns: auto;
+    }
+
+    #services-forms-container aside {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .services-forms-inner-container {
+        width: 40vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .custom-form-field-input {
+        width: 34vw !important;
+    }
+}

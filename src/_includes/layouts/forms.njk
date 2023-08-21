@@ -1,0 +1,261 @@
+---
+banner_img: '/img/Background-Images/Converted-02.jpg'
+---
+
+<!DOCTYPE html>
+<html id="html" lang="{{ locale }}" dir="{{ dir }}">
+	{% include "components/head.njk" %}
+</head>
+
+<body>
+	<main class="main" style="overflow-y: hidden">
+		<div id="parent-container" class="main-inner-forms main-inner">
+			{% if '404' in page.url %}
+				{% include "components/breadcrumbBlock.njk" %}
+			{% endif %}
+
+			<div id="services-forms-container">
+				{# BEGIN FIRST SECTION #}
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12 col-md-7 content-item">
+							<form
+									id="myForm"
+									name="myForm"
+									netlify
+									method="post"
+									action="{{btn_action}}"
+									onsubmit="return validateRecaptcha()"
+									class="contact-form contact-form-padding">
+								<!-- Begin hidden Field for send form -->
+								<input type="hidden" name="form_subject" value="Service form"/>
+								<div class="col gutters-default">
+									<div class="col-12 mt-10">
+										<br/>
+										<br/>
+										<a onclick="mixpanel.track('Go Home Button')" href="/pages/{{ locale }}/" class="logo logo-ico-widht-text" title="ATDEV">
+											<img style="max-width: 250px !important; max-height: 90px !important;" class="lazy logo-ico" data-src="/img/logo.png" zwidth="100" height="50" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="img"/>
+											<span class="logo-text"></span>
+										</a>
+										<br/>
+										<h3 class="heading-sub custom-colors" style="font-size: 1rem; font-family: 'GothamBook', Metropolis, sans-serif !important; font-weight: normal !important;">{{ thanks }}</h3>
+									</div>
+									<div class="col-xl-4 col-sm-6 col-12">
+										<div class="form-field">
+											<label style=" margin-top: 1rem !important; font-weight: bold; font-family: 'GothamBook', Metropolis, sans-serif !important; margin-bottom: 1rem !important;"
+													for="contact-name">
+												<h3>{{ name }}</h3>
+												<input type="text" class="form-field-input custom-form-field-input" minlength="3" required name="ContactName" value="" autocomplete="on" required="required" id="contact-name"/>
+											</label>
+										</div>
+										<div class="form-field">
+											<label style="font-weight: bold;font-family: 'GothamBook', Metropolis, sans-serif !important;" for="contact-email">
+												<h3>{{ email }}</h3>
+												<input type="email" class="form-field-input custom-form-field-input" name="ContactEmail" value="" autocomplete="on" required="required" id="contact-email" style="margin-bottom: 1rem;"/>
+												<span class="contactEmailError" style="color: rgb(233,8,8);margin-bottom: 1rem;"></span>
+											</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-sm-6 col-12">
+										<div class="services-forms-inner-container">
+											<div class="form-field">
+												<label class="services-forms-radio-service-label" for="servicesFormsRadioService">
+													<h3>{{ selectService }}</h3>
+													<select required id="servicesFormsRadioService" class="custom-form-field-input" name="service[]">
+														<option value="">{{selectOption}}</option>
+														<option value="Staff Augmentation">{{staffAugmentation}}</option>
+														<option value="Recruiting">{{ recruiting }}</option>
+														<option value="Custom Development">{{customDevelopment}}</option>
+														<option value="Other">
+															{{ selectOther }}</option>
+													</select>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div id="services-forms-position-interested-container" class="col-xl-4 col-sm-6 col-12" style="display: none;">
+										{% include "components/services_forms_position_staff.block.njk" %}
+									</div>
+
+									<div id="services-forms-technologies-container" class="col-xl-4 col-sm-6 col-12" style="display: none;">
+										{% include "components/services_forms_technologies.block.njk" %}
+									</div>
+
+									<div id="services-forms-other-comments-container" class="col-xl-4 col-sm-6 col-12" style="display: none;">
+
+										{% include "components/services_forms_comments.block.njk" %}
+									</div>
+
+									<div class="col-xl-4 col-sm-6 col-12">
+										<br/>
+										<div data-netlify-recaptcha></div>
+									</div>
+									<br/>
+									<br/>
+
+									<span class="contactEmailError" style=" color: rgb(233, 8, 8);margin-bottom: 1rem; font-weight: bold;"></span>
+									<div class="col-12 mt-15">
+										<div class="form-btn">
+											<button onclick="mixpanel.track('Send Message Button')" type="submit" class="btn btn-w240 ripple">{{sendMessage}}</button>
+										</div>
+									</div>
+								</div>
+								<br/>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				{# END FIRST SECTION #}
+				{# BEGIN SECOND SECTION #}
+				<aside>
+					<div
+							class="bg-image-aside"
+							style="background-image: url('{{banner_img}}'); box-shadow: 0 10px 6px rgb(16, 116, 190);"></div>
+					<div class="bg-text-aside">
+						<img src="/logos/LOGOATDEVDEGRADADO-01.png" style="width: 70%; margin-top: 1.8rem;" alt="atdev log">
+						<h3 style="color: white; font-size: 2.5rem !important; margin-top: 6.6rem !important; text-transform: uppercase;">{{ hireSpecialists }}</h3>
+					</div>
+				</aside>
+				{# END SECOND SECTION #}
+			</div>
+
+			<script>
+
+				const position_interested_container = $('#services-forms-position-interested-container');
+				// const position_interested_recruiting_container = $('#services-forms-position-interested-recruiting-container');
+				const services_forms_technologies_container = $('#services-forms-technologies-container');
+				const other_comments_container = $('#services-forms-other-comments-container');
+				const servicesFormsRadioService = $('#servicesFormsRadioService');
+
+				function onFormSubmit() {
+					const formId = 'myForm' // Replace with your actual form ID
+					const siteId = 'd1516749-cfe0-455f-86a4-35d5f1e2ca84/forms'
+					const formSubmitUrl = `https://api.netlify.com/api/v1/sites/${siteId}/${formId}/submissions`
+
+					const formData = {
+						"ContactName": document
+							.querySelector("#contact-name")
+							.value,
+						"ContactEmail": document
+							.querySelector("#contact-email")
+							.value,
+						"technologies": Array
+							.from(document.querySelectorAll("#services-forms-technologies-container input[type=checkbox]"))
+							.filter(x => x.checked)
+							.map(x => x.name)
+							.join(','),
+						"Service": document
+							.querySelector("#servicesFormsRadioService")
+							.value,
+						"Position": document
+							.querySelector("#servicesFormsPositionRadioStaff")
+							.value,
+						"Comments": document
+							.querySelector("#contact-message")
+							.value
+					}
+
+					/*let headers = new Headers();
+						headers.append('Access-Control-Allow-Origin', location.origin);
+						headers.append('Access-Control-Allow-Credentials', 'true');
+						headers.append('Access-Control-Request-Method', 'POST')
+						headers.append('Access-Control-Request-Headers', 'Content-Type, Authorization')*/
+
+					fetch("/", {
+						method: 'POST',
+						headers: {
+							"Content-Type": "application/x-www-form-urlencoded"
+						},
+						body: new URLSearchParams({
+							"form-name": "myForm",
+							...formData
+						}).toString()
+					})
+						.then((response) => {
+							if (!response.ok) {
+								throw new Error('Network response was not ok')
+							}
+							return response.json()
+						})
+						.then((data) => {
+							// Handle the successful form submission response
+							console.log('Form submitted successfully!', formParams)
+
+							location.href = document
+								.querySelector('#myForm')
+								.action
+						})
+						.catch((error) => {
+							// Handle errors
+							console.error('Error submitting the form.', formParams)
+						})
+					}
+
+				$(() => {
+					//On submit button
+					$("#submitBtn").click(() => {
+						onFormSubmit();
+					});
+
+					$(".technologiesSection input[type='checkbox']").click((e) => {
+						let result = e.target.checked
+							? e.target.value
+							: "";
+						let technologies = $("#technologiesHidden");
+
+						if (technologies.val().trim() == "") {
+							technologies.val(result)
+						} else {
+							if (result == "") {
+								let inputValue = technologies
+									.val()
+									.replace(`,${e.target.value}`, "")
+									.replace(e.target.value, "")
+								technologies.val(inputValue)
+							} else {
+								technologies.val(`${technologies.val()},${result}`)
+							}
+						}
+
+					})
+				});
+
+				$('#servicesFormsRadioService').change(e => {
+					let service = $('#servicesFormsRadioService').val();
+
+					if (service == "Staff Augmentation") {
+						$(services_forms_technologies_container).show();
+						$(other_comments_container).show();
+						$(position_interested_container).show();
+						$("#servicesFormsPositionRadioStaff").prop("required", true)
+					} else if (service == "Recruiting") {
+						$(services_forms_technologies_container).show();
+						$(other_comments_container).show();
+						$(position_interested_container).show();
+						$("#servicesFormsPositionRadioStaff").prop("required", true)
+					} else if (service == "Custom Development") {
+						$(services_forms_technologies_container).hide();
+						$(other_comments_container).show();
+						$(position_interested_container).hide();
+						$("#servicesFormsPositionRadioStaff").prop("required", false)
+					} else {
+						$(services_forms_technologies_container).hide();
+						$(other_comments_container).show();
+						$(position_interested_container).hide();
+						$("#servicesFormsPositionRadioStaff").prop("required", false)
+					}
+
+				})
+			</script>
+		</div>
+	</main>
+	<!-- End main -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/js/script.min.js"></script>
+	{% include "../indexJS.minifer.njk" %}
+</body>
+</html>

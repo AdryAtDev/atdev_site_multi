@@ -1,0 +1,43 @@
+---
+layout: 'layouts/base.njk'
+id: about.html
+pagination:
+    data: languages
+    size: 1
+    alias: language
+permalink: "pages/{{ language.lang | slugify }}/{{id}}"
+---
+
+<!-- Begin main content -->
+<br/><br/>
+
+<div class="main-content">
+  <div class="container">
+    {# {% include "components/breadcrumbBlock.njk" %} #}
+    <div class="row items">
+      <div class="col-12">
+        <div class="wrapp-page-title page-title-center">
+          <div class="page-subtitle">{{pageSubtitle[locale]}}</div>
+          <h1 class="page-title">{{pageTitle[locale]}}</h1>
+        </div>
+      </div>
+      {% for about in about.about[locale] %}
+        <div class="col-lg-4 col-md-6 col-12 item">
+          <!-- Begin services item -->
+          <a onclick="mixpanel.track('Go to ' + about.title + ' Service Page Button')" href="{{ about.link }}" class="services-item services-item-modern item-style">
+            <div class="services-item-ico">
+              <i class="material-icons material-icons-outlined md-48">{{ about.icon }}</i>
+            </div>
+            <div class="services-item-ico-bg">
+              <i class="material-icons material-icons-outlined">{{ about.icon }}</i>
+            </div>
+            <h4 class="services-item-title">{{ about.title }}</h4>
+            <div class="services-item-desc">{{ about.long_description }}</div>
+          </a>
+          <!-- End services item -->
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!-- End main content -->

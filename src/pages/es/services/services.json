@@ -1,0 +1,7 @@
+{
+	"layout": "layouts/base.njk",
+	"tags": "/pages/es/services/",
+	"locale": "es",
+	"dir": "ltr",
+	"serviceLabel": "servicios"
+}

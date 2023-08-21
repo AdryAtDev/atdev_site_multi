@@ -1,0 +1,18 @@
+{
+  "thanks_lang": {
+    "en": "en",
+    "es": "es"
+  },
+  "title": {
+    "en": "Thanks",
+    "es": "Gracias"
+  },
+  "h1_text": {
+    "en": "Thank you for your interest in our services; <br />We’ll contact you soon.",
+    "es": "Gracias por su interés en nuestros servicios; <br /> Nos pondremos en contacto con usted pronto."
+  },
+  "btn_hire_specialist": {
+    "en": "Go Home",
+    "es": "Ir a Inicio"
+  }
+}

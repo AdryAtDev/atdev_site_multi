@@ -1,0 +1,145 @@
+---
+layout: layouts/base.njk
+serviceTitle: Service
+title: ""
+bannerTitle: ""
+banner_img: '/img/Background-Images/Background-Recruiting.png'
+---
+
+<style>
+	.banner {
+		background: url({{ banner_img }}) no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		-ms-background-size: cover;
+		min-height: 480px;
+	}
+
+	.masthead {
+		height: 65vh;
+		min-height: 300px;
+		background-image: url("{{ banner_img }}");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.row.h-100.align-items-center {
+		display: flex !important;
+		align-items: end !important;
+	}
+
+	.col-12.text-center {
+		min-width: 60%;
+	}
+
+	.sub_banner_title {
+		color: white;
+		font-size: 1rem;
+		max-width: 70%;
+		font-weight: 100;
+		font-family: 'GothamBook', Metropolis, sans-serif;
+	}
+
+	.sub_banner_title b {
+		font-family: GothamBold, Metropolis, sans-serif !important;
+	}
+</style>
+
+<!-- Begin main banner -->
+<div class="section-bg main-banner" style="box-shadow: 0 10px 6px rgba(0, 33, 41, 0.13295)">
+	<div class="main-banner-slider flickity-dots-absolute reduce-banner-height" data-flickity='{ "bgLazyLoad": 0, "bgLazyLoad": false, "fade": true, "prevNextButtons": false, "autoPlay": 6000, "pauseAutoPlayOnHover": false }'>
+		<div class="main-banner-slider-item" style=" background-image: url('/img/Background-Images/Background-Recruiting.png');">
+			<div class="container">
+				<div class="row" style="margin-top: 0.1rem !important">
+					<div class="col">
+						<div class="main-banner-content">
+							<h2 class="main-banner-title">{{title}}</h2>
+							<div class="main-banner-desc">
+								<p>{{banner_title}}</p>
+								<div class="row d-flex justify-content-left" style="margin-left: 0; margin-top: 1rem">
+									<a style="font-family: 'GothamBook', Metropolis, sans-serif !important; font-weight: bold !important;" onclick="mixpanel.track('Go to Contact Page Button')" href="{{"/pages/" + locale + "/services/forms/"}}" class="btn btn-w240 ripple">{{scheduleACall}}</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End main banner -->
+
+<!-- Begin main content -->
+<div class="main-content">
+	<div class="container">
+		<div>{% include "components/breadcrumbBlock.njk" %}</div>
+		<div>
+			<h1 class="font-weight-light" class="banner_title" style="color: #1074BE; margin-bottom: 0;">{{introduction_title}}</h1>
+			{% if introduction_subtitle == undefined %}
+				<p class="lead sub_banner_title" style="color: #1074BE;">{{ banner_title }}</p>
+			{% else %}
+				<p class="lead sub_banner_title" style="color: #1074BE;">{{introduction_subtitle | safe}}</p>
+			{% endif %}
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<div class="content">
+					<div class="how-section1" style="padding-top: 0; margin-top: 1rem">
+						<div class="row">
+							<div class="col-md-6 how-img">
+								<img src="/img/Vector-Images/iconos-Recruiting-01.png" alt="recruiting image"/>
+							</div>
+							<div class="col-md-6">
+								<h4 class="custom-colors">{{secondCardSectionTitle1 | safe}}</h4>
+								<h4 class="subheading custom-colors-subheading">{{secondCardSectionSubtitle1 | safe}}</h4>
+								<p class="text-muted">{{secondCardSectionDescription1 | safe}}</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 how-img">
+								<img src="/img/Vector-Images/iconos-Recruiting-02.png" alt="recruiting image"/>
+							</div>
+							<div class="col-md-6">
+								<h4 class="custom-colors">{{secondCardSectionTitle2 | safe}}</h4>
+								<h4 class="subheading custom-colors-subheading">{{secondCardSectionSubtitle2 | safe}}</h4>
+								<p class="text-muted">{{secondCardSectionDescription2 | safe}}</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 how-img">
+								<img src="/img/Vector-Images/iconos-Recruiting-03.png" alt="recruiting image"/>
+							</div>
+							<div class="col-md-6">
+								<h4 class="custom-colors">{{secondCardSectionTitle3 | safe}}</h4>
+								<h4 class="subheading custom-colors-subheading">{{secondCardSectionSubtitle3 | safe}}</h4>
+								<p class="text-muted">{{secondCardSectionDescription3 | safe}}</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 how-img">
+								<img src="/img/Vector-Images/iconos-Recruiting-04.png" alt="recruiting image"/>
+							</div>
+							<div class="col-md-6">
+								<h4 class="custom-colors">{{secondCardSectionTitle4 | safe}}</h4>
+								<h4 class="subheading custom-colors-subheading">{{secondCardSectionSubtitle4 | safe}}</h4>
+								<p class="text-muted">
+									{{secondCardSectionDescription4 | safe}}
+									{% if '/es/' in page.url %}
+									
+                				{% endif %}
+								</p>
+							</div>
+						</div>
+						<div class="row d-flex justify-content-center">
+							<a style=" font-family: 'GothamBook', Metropolis, sans-serif !important; font-weight: bold !important;" onclick="mixpanel.track('Go to Contact Page Button')" href="/pages/{{locale}}/services/forms/" class="btn btn-w240 ripple" >{{btnHireASpecialist | safe}}</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End main content -->

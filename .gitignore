@@ -1,0 +1,12 @@
+
+node_modules/
+
+*.DS_Store
+.node_modules
+.identifier
+*.Identifier
+*Zone.Identifier
+
+.vscode
+_site/
+dist/

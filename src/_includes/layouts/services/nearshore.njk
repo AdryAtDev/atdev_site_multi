@@ -1,0 +1,193 @@
+---
+layout: layouts/base.njk
+serviceTitle: Service
+banner_img: '/img/Background-Images/Background-Nearshore.png'
+---
+
+<style>
+	.banner {
+		background: url({{ banner_img }}) no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		-ms-background-size: cover;
+		min-height: 480px;
+	}
+
+	.masthead {
+		height: 65vh;
+		min-height: 300px;
+		background-image: url("{{ banner_img }}");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.row.h-100.align-items-center {
+		display: flex !important;
+		align-items: end !important;
+	}
+
+	.col-12.text-center {
+		min-width: 60%;
+	}
+
+	.sub_banner_title {
+		color: white;
+		font-size: 1rem;
+		max-width: 70%;
+		font-weight: 100;
+		font-family: 'GothamBook', Metropolis, sans-serif;
+	}
+
+	.sub_banner_title b {
+		font-family: GothamBold, Metropolis, sans-serif !important;
+	}
+</style>
+
+<!-- Begin main banner -->
+<div class="section-bg main-banner" style="box-shadow: 0 10px 6px rgba(0, 33, 41, 0.13295)">
+	<div class="main-banner-slider flickity-dots-absolute reduce-banner-height" data-flickity='{ "bgLazyLoad": 0, "bgLazyLoad": false, "fade": true, "prevNextButtons": false, "autoPlay": 6000, "pauseAutoPlayOnHover": false }'>
+		<div class="main-banner-slider-item" style=" background-image: url('/img/Background-Images/Background-Nearshore.png');">
+			<div class="container">
+				<div class="row" style="margin-top: 0.1rem !important">
+					<div class="col">
+						<div class="main-banner-content">
+							<h2 class="main-banner-title">{{title}}</h2>
+							<div class="main-banner-desc">
+								<p>{{banner_title}}</p>
+								<div class="row d-flex justify-content-left" style="margin-left: 0; margin-top: 1rem">
+									<a style="font-family: 'GothamBook', Metropolis, sans-serif !important; font-weight: bold !important;" onclick="mixpanel.track('Go to Contact Page Button')" href="{{"/pages/" + locale + "/services/forms/"}}" class="btn btn-w240 ripple">{{scheduleACall}}</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End main banner -->
+
+<!-- Begin main content -->
+<div class="main-content">
+	<div class="container">
+		<div>{% include "components/breadcrumbBlock.njk" %}</div>
+		<div>
+			<h1 class="font-weight-light" class="banner_title" style="color: #1074BE; margin-bottom: 0;">{{introduction_title}}</h1>
+			{% if introduction_subtitle == undefined %}
+				<p class="lead sub_banner_title" style="color: #1074BE;">{{ banner_title }}</p>
+			{% else %}
+				<p class="lead sub_banner_title" style="color: #1074BE;">{{introduction_subtitle | safe}}</p>
+			{% endif %}
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<div class="content">
+					<div class="container">
+						<div class="row" style="justify-content: center; gap: 2rem">
+							<div class="col-md-6 col-lg-3 custom-BoxShadow">
+								<div class="single-service">
+									<div class="part-1">
+										<img src="/img/Vector-Images/vectores-atdev-web-04.png"/>
+										<h3 class="title custom-colors">{{firstCardSectionTitle1 | safe}}</h3>
+									</div>
+									<div class="part-2">
+										<p class="description">{{firstCardSectionDescription1 | safe}}</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 custom-BoxShadow">
+								<div class="single-service">
+									<div class="part-1">
+										<img src="/img/Vector-Images/vectores-atdev-web-05.png"/>
+										<h3 class="title custom-colors">{{firstCardSectionTitle2 | safe}}</h3>
+									</div>
+									<div class="part-2">
+										<p class="description">{{firstCardSectionDescription2 | safe}}</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 custom-BoxShadow">
+								<div class="single-service">
+									<div class="part-1">
+										<img src="/img/Vector-Images/vectores-atdev-web-06.png"/>
+										<h3 class="title custom-colors">{{firstCardSectionTitle3 | safe}}</h3>
+									</div>
+									<div class="part-2">
+										<p class="description">{{firstCardSectionDescription3 | safe}}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div style="margin-top: 8rem !important">
+						<h1 class="font-weight-light" class="banner_title" style="color: #1074be; margin-bottom: 0">{{introduction_title2}}</h1>
+						<p class="lead sub_banner_title" style="color: #1074be">{{introduction_subtitle2 | safe}}</p>
+					</div>
+
+					<div class="how-section1">
+						<div class="row">
+							<div class="col-md-6 how-img"><img src="/img/Vector-Images/vectores-atdev-web-07.png" alt="img"/></div>
+							<div class="col-md-6">
+								<h4 class="custom-colors">{{secondCardSectionTitle1 | safe}}</h4>
+								<h4 class="subheading custom-colors-subheading">{{secondCardSectionSubtitle1 | safe}}</h4>
+								<p class="text-muted">{{secondCardSectionDescription1 | safe}}</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6 how-img"><img src="/img/Vector-Images/vectores-atdev-web-08.png" alt="img"/></div>
+							<div class="col-md-6">
+								<h4 class="custom-colors">{{secondCardSectionTitle2 | safe}}</h4>
+								<h4 class="subheading custom-colors-subheading">{{secondCardSectionSubtitle2 | safe}}</h4>
+								<p class="text-muted">{{secondCardSectionDescription2 | safe}}</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6 how-img"><img src="/img/Vector-Images/vectores-atdev-web-09.png" alt="img"/></div>
+							<div class="col-md-6">
+								<h4 class="custom-colors">{{secondCardSectionTitle3 | safe}}</h4>
+								<h4 class="subheading custom-colors-subheading">{{secondCardSectionSubtitle3 | safe}}</h4>
+								<p class="text-muted">{{secondCardSectionDescription3 | safe}}</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6 how-img"><img src="/img/Vector-Images/vectores-atdev-web-10.png" alt="img"/></div>
+							<div class="col-md-6">
+								<h4 class="custom-colors">{{secondCardSectionTitle4 | safe}}</h4>
+								<h4 class="subheading custom-colors-subheading">{{secondCardSectionSubtitle4 | safe}}</h4>
+								<p class="text-muted">
+									{{secondCardSectionDescription4 | safe}}
+									<small>
+										<a onclick="mixpanel.track('Go to Salesforce Page Button')" href="https://www.salesforce.com/" >Salesforce</a >,
+                                        <a onclick="mixpanel.track('Go to .Net Page Button')" href="https://dotnet.microsoft.com/" >.NET</a >,
+                                        <a onclick="mixpanel.track('Go to Python Page Button')" href="https://www.python.org/" >Python</a >,
+                                        <a onclick="mixpanel.track('Go to JavaScript Page Button')" href="https://developer.mozilla.org/es/docs/Web/JavaScript" >Javascript</a >
+										{% if '/en/' in page.url %}
+                                            and
+                                        {% else %}
+                                            y
+                                        {% endif %}
+										<a onclick="mixpanel.track('Go to Python Page Button')" href="https://docs.oracle.com/en/java/" >Java</a >.
+				                    </small>
+									{{secondCardSectionDescription5 | safe}}
+								</p>
+							</div>
+						</div>
+
+						<div class="row d-flex justify-content-center">
+							<a style=" font-family: 'GothamBook', Metropolis, sans-serif !important; font-weight: bold !important;" onclick="mixpanel.track('Go to Contact Page Button')" href="/pages/{{locale}}/services/forms/" class="btn btn-w240 ripple" >{{btnHireASpecialist | safe}}</a >
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End main content -->

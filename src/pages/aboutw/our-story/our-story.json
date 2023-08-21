@@ -1,0 +1,86 @@
+{
+  "title": {
+    "en": "Our Story",
+    "es": "Nuestra Historia"
+  },
+  "description": {
+    "en": "Our Story",
+    "es": "Nuestra Historia"
+  },
+  "firstSection":{
+    "heading": {
+      "en": "About",
+      "es": "Nosotros"
+    },
+    "subheading": {
+      "en": "Our Story",
+      "es": "Nuestra Historia"
+    },
+    "description1": {
+      "en": "is a company that focuses on providing cloud software solutions and nearshore staff augmentation services. We were founded in 2016 with the premise of helping every company fulfill the full potential of cloud computing and helping them find the best talent in the technologies they use.  We consider ourselves a firm of specialists; therefore, we make sure companies who rely on us for their staffing needs feel secure with their investments.",
+      "es": "es una empresa que se enfoca en brindar soluciones de software en la nube y servicios de aumento de personal en la costa. Fuimos fundados en 2016 con la premisa de ayudar a todas las empresas a aprovechar todo el potencial de la computación en la nube y ayudarlas a encontrar el mejor talento en las tecnologías que utilizan. Nos consideramos una firma de especialistas; por lo tanto, nos aseguramos de que las empresas que confían en nosotros para sus necesidades de personal se sientan seguras con sus inversiones" 
+    },
+    "description2": {
+      "en": "Our offices are in Latin America. Our location allows us to offer the best talent in the LATAM region who can speak your language, understand your culture and work in your time zone at a very competitive rate.",
+      "es": "Nuestras oficinas están en América Latina. Nuestra ubicación nos permite ofrecer el mejor talento en la región de LATAM que puede hablar su idioma, comprender su cultura y trabajar en su zona horaria a un precio muy competitivo."
+    }
+  },
+  "valuesTitle": {
+    "en": "Our Values",
+    "es": "Nuestros Valores"
+  },
+  "value1": {
+    "title": {
+      "en": "Openness",
+      "es": "Honestidad"
+    },
+    "description": {
+      "en": "We value Truth and Transparency. We won't say something we aren't or promise something we can't keep.",
+      "es": "Valoramos la Verdad y la Transparencia. No diremos algo que no somos ni prometeremos algo que no podamos cumplir."
+    }
+  },
+  "value2": {
+    "title": {
+      "en": "Work Ethic",
+      "es": "Ética de trabajo"
+    },
+    "description": {
+      "en": "We work hard every day to make a positive impact on our organization and our clients. We are builders of dreams and hard work is the only way to make them happen.",
+      "es": "Trabajamos duro todos los días para tener un impacto positivo en nuestra organización y nuestros clientes. Somos constructores de sueños y el trabajo duro es la única forma de hacerlos realidad."
+    }
+  },
+  "value3": {
+    "title": {
+      "en": "Authenticity",
+      "es": "Autenticidad"
+    },
+    "description": {
+      "en": "We are Authentic in our business and with our approach to doing things.",
+      "es": "Somos Auténticos en nuestro negocio y con nuestro enfoque para hacer las cosas."
+    }
+  },
+  "value4": {
+    "title": {
+      "en": "Loyalty",
+      "es": "Lealtad"
+    },
+    "description": {
+      "en": "We are Loyal to our Customers and our Colleagues.",
+      "es": "Somos Leales a nuestros Clientes y a nuestros Colegas."
+    }
+  },
+  "value5": {
+    "title": {
+      "en": "Hustle Mentality",
+      "es": "Mentalidad Dinámica"
+    },
+    "description": {
+      "en": "We Focus on Results and we get them Done no matter what.",
+      "es": "Nos enfocamos en los resultados y los logramos sin importar qué."
+    }
+  },
+  "btnContact": {
+    "en": "Contact Us",
+    "es": "Contáctanos"
+  }
+}

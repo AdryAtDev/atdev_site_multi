@@ -1,0 +1,19 @@
+---
+layout: 'layouts/base.njk'
+title: {
+	en: "Careers",
+	es: "Carreras"
+}
+id: careers.html
+pagination:
+    data: languages
+    size: 1
+    alias: language
+permalink: "pages/{{ language.lang | slugify }}/{{id}}"
+---
+
+<iframe
+	class="freshteam"
+	src="{{link[locale]}}"
+	frameborder="0"
+	allowfullscreen></iframe>

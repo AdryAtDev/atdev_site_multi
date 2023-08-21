@@ -1,0 +1,112 @@
+---
+layout: 'layouts/base.njk'
+id: aboutw/our-story.html
+pagination:
+    data: languages
+    size: 1
+    alias: language
+permalink: "pages/{{ language.lang | slugify }}/{{id}}"
+---
+
+{# BEGIN MAIN CONTENT #}
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="container" style="margin-top: 2rem">
+  {# {% include "components/breadcrumbBlock.njk" %} #}
+  <div class="row">
+    <div class="col-12 mt-10">
+      <br/>
+      <h3 class="heading">{{ firstSection.heading[locale] }}</h3>
+      <h4 class="heading-sub">{{firstSection.subheading[locale]}}</h4>
+      <p>
+        <b class="heading">ATDEV</b>
+        {{firstSection.description1[locale]}}</p>
+      <p>{{firstSection.description2[locale]}}</p>
+    </div>
+    <div class="col-12 mt-10">
+      <h4 class="heading-sub">{{valuesTitle[locale]}}</h4>
+      <!-- Begin why choose us -->
+      <section class="section section-bg">
+        <div class="container">
+          <div class="row items">
+            <div class="col-lg-6 col-md-6 col-12 item">
+              <!-- Begin choose us item -->
+              <div class="advantages-item">
+                <div class="advantages-item-count">01</div>
+                <div class="advantages-item-info">
+                  <h4 class="advantages-item-title">{{value1.title[locale]}}</h4>
+                  <div class="advantages-item-desc">
+                    <p>{{value1.description[locale]}}</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End choose us item -->
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 item">
+              <!-- Begin choose us item -->
+              <div class="advantages-item">
+                <div class="advantages-item-count">02</div>
+                <div class="advantages-item-info">
+                  <h4 class="advantages-item-title">{{value2.title[locale]}}</h4>
+                  <div class="advantages-item-desc">
+                    <p>{{value2.description[locale]}}</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End choose us item -->
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 item">
+              <!-- Begin choose us item -->
+              <div class="advantages-item">
+                <div class="advantages-item-count">03</div>
+                <div class="advantages-item-info">
+                  <h4 class="advantages-item-title">{{value3.title[locale]}}</h4>
+                  <div class="advantages-item-desc">
+                    <p>{{value3.description[locale]}}</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End choose us item -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+              <!-- Begin choose us item -->
+              <div class="advantages-item">
+                <div class="advantages-item-count">04</div>
+                <div class="advantages-item-info">
+                  <h4 class="advantages-item-title">{{value4.title[locale]}}</h4>
+                  <div class="advantages-item-desc">
+                    <p>{{value4.description[locale]}}</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End choose us item -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 item">
+              <!-- Begin choose us item -->
+              <div class="advantages-item">
+                <div class="advantages-item-count">05</div>
+                <div class="advantages-item-info">
+                  <h4 class="advantages-item-title">{{value5.title[locale]}}</h4>
+                  <div class="advantages-item-desc">
+                    <p>{{value5.description[locale]}}</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End choose us item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End why choose us -->
+    </div>
+  </div>
+  <br/>
+  <div class="row d-flex justify-content-center">
+    <a onclick="mixpanel.track('Go to Contact Page Button')" href="{{"/pages/" + locale + "/contact"}}" class="btn btn-w240 ripple">{{btnContact[locale]}}</a>
+  </div>
+  <br/>
+</div>
+{# END MAIN CONTENT #}

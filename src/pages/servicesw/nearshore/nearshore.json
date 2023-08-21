@@ -1,0 +1,126 @@
+{
+  "title": {
+    "en": "Nearshore Staff Augmentation",
+    "es": "Dotación de Personal"
+  },
+  "description": {
+    "en": "Nearshore Outsourcing",
+    "es": "Subcontratación cercana a la costa"
+  },
+  "long_description": {
+    "en": "Your projects can be built with a group of experts located in your timezone with an excellent communication skills. We give you our best developers to work in your projects. All resources need to work with us before they work for you.",
+    "es": "Sus proyectos se pueden construir con un grupo de expertos ubicados en su zona horaria con excelentes habilidades de comunicación. Ponemos a tu disposición a nuestros mejores desarrolladores para trabajar en tus proyectos. Todos los recursos deben trabajar con nosotros antes de que funcionen para usted."
+  },
+  "icon": {
+    "en": "groups",
+    "es": "groups"
+  },
+  "banner_title": {
+    "en": "We help you build your idea by providing you experts developers with proven hands-on experience.",
+    "es": "Ayudamos a construir sus ideas brindándoles expertos desarrolladores con experiencia práctica comprobada."
+  },
+  "introduction_title": {
+    "en": "Hire Specialists",
+    "es": "Contrata Especialistas"
+  },
+  "introduction_subtitle": {
+    "en": "<b>Experts</b> Candidates near your team and with these <b>Traits:</b>",
+    "es": "<b>Expertos</b> Candidatos cerca de tu equipo y con estas <b>Características:</b>"
+  },
+  "introduction_title2": {
+    "en": "Talent Aligned with Your Needs",
+    "es": "Talento alineado con sus necesidades"
+  },
+  "introduction_subtitle2": {
+    "en": "Focus on your Ideas, and we help you with <b>Recruiting</b> and <b>Staffing</b>.",
+    "es": "Enfóquese en sus Ideas y nosotros lo ayudaremos con <b>Reclutamiento.</b>"
+  },
+  "scheduleACall": {
+    "en": "Schedule a Call",
+    "es": "Agendar Llamada"
+  },
+  "btnHireASpecialist": {
+    "en": "Hire a Specialist!",
+    "es": "Contrata a un especialista!"
+  },
+  "firstCardSection": {
+    "title1": {
+      "en": "Communication",
+      "es": "Comunicación"
+    },
+	  "description1": {
+      "en": "We focus heavily on English communication skills, both oral and written. Our candidates will understand your business and the problems you want to solve clearly.",
+      "es": "Nos enfocamos mucho en el inglés. habilidades comunicativas, tanto orales como escritas. Nuestro los candidatos entenderán su negocio y el problemas que desea resolver con claridad."
+    },
+	  "title2": {
+      "en": "Tech Skills",
+      "es": "Habilidades Tecnológicas"
+    },
+	  "description2": {
+      "en": "No matter their expertise, we validate how Candidates work by assigning them challenging real projects.",
+      "es": "No importa su experiencia, nosotros validar cómo trabajan los Candidatos asignándoles desafiantes proyectos reales."
+    },
+	  "title3": {
+      "en": "Commitment",
+      "es": "Compromiso"
+    },
+	  "description3": {
+      "en": "We look for commitment from our candidates. We look at things such as responsibility, dedication, and perseverance to be a cornerstone for a remote developer.",
+      "es": "Buscamos el compromiso de nuestros candidatos. Nosotros miramos a cosas como responsabilidad, dedicación y perseverancia para ser la piedra angular de un desarrollador remoto."
+    }
+  },
+  "secondCardSection": {
+    "title1": {
+      "en": "Clear Message",
+      "es": "Comunicación"
+    },
+	  "subtitle1": {
+      "en": "Excellent English Communication Skills both Oral and Written",
+      "es": "Excelentes habilidades de comunicación en inglés tanto orales como escritas."
+    },
+	  "description1": {
+      "en": "All resources need to have excellent English skills. Communication skills are also focused on technical language. We provide resources that have the ability to deliver clear messages in all aspects of software development.",
+      "es": "Todos los recursos deben tener excelentes habilidades en inglés. Las habilidades de comunicación también se centran en el lenguaje técnico. Nosotros proporcionar recursos que tengan la capacidad de ofrecer mensajes en todos los aspectos del desarrollo de software."
+    },
+	  "title2": {
+      "en": "Timezone",
+      "es": "Zona horaria"
+    },
+	  "subtitle2": {
+      "en": "Hire Experts and Specialist in your Timezone",
+      "es": "Contrata Expertos y Especialistas en tu Zona Horaria"
+    },
+	  "description2": {
+      "en": "Located at the center(Dominican Republic) of the LATAM region, we have connections in the whole region that allow us to provide the best talent in the technologies we are experts at.",
+      "es": "Ubicado en el centro (República Dominicana) de la región LATAM, contamos con conexiones en toda la región que nos permiten brindar el mejor talento en las tecnologías en las que somos expertos."
+    },
+	  "title3": {
+      "en": "Tech Knowledge",
+      "es": "Conocimiento Tecnológico"
+    },
+	  "subtitle3": {
+      "en": "New Candidates should Work for Us on at least 2 Projects before offering their Services to Potential Clients",
+      "es": "Los nuevos candidatos deben trabajar para nosotros en al menos 2 proyectos antes ofreciendo sus Servicios a Clientes Potenciales"
+    },
+	  "description3": {
+      "en": "Our technical skills assessment is based on the work assignment of internal solutions or task assignment from open-source projects we own. As part of this process, we request technical designs, review the source code as any software development team would, and finally test functionality. We also assess other technical skills such as Source Control Management, Database, UI / UX, and DevOps.",
+      "es": "Nuestra evaluación de habilidades técnicas se basa en la asignación de trabajo. de soluciones internas o asignación de tareas de código abierto proyectos que poseemos. Como parte de este proceso, solicitamos asistencia técnica diseños, revisar el código fuente como cualquier equipo de desarrollo de software haría, y finalmente probaría la funcionalidad. También evaluamos otros habilidades técnicas como gestión de control de fuente, base de datos, interfaz de usuario /UX y DevOps."
+    },
+	  "title4": {
+      "en": "Specialists",
+      "es": "Especialistas"
+    },
+	  "subtitle4": {
+      "en": "Hire Specialists in The Technologies you Use",
+      "es": "Contrata especialistas en las tecnologías que utilizas"
+    },
+	  "description4": {
+      "en": "We only offer you candidates in technologies we are experts at. This approach allows us to provide you with the best candidates in each technology. We offer services of Nearshore Staff Augmentation in these technologies =>",
+      "es": "Solo te ofrecemos candidatos en tecnologías en las que somos expertos. Este enfoque nos permite ofrecerle los mejores candidatos en cada tecnología. Ofrecemos servicios de Nearshore Staff Aumento en estas tecnologías =>"
+    },
+	  "description5": {
+      "en": "Alongside the technologies we specialized in, we also specialized in finding <b class='custom-colors'>QAs, DevOps, and Business Analysts</b> with exposure to the pre-mentioned technologies.",
+      "es": "Además de las tecnologías en las que nos especializamos, también especializado en encontrar <b class='custom-colors'>QAs, DevOps, and Business Analysts</b> con exposición a las tecnologías antes mencionadas."
+    }
+  }
+}

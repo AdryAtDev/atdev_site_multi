@@ -1,0 +1,39 @@
+#breadcrumb * {
+    color: #3c8ccb !important;
+    font-size: 0.9rem;
+}
+
+.masthead .col {
+    padding-left: 0 !important;
+}
+
+#breadcrumb {
+    width: 85%;
+    display: flex;
+    margin-top: -4rem;
+    margin-bottom: 3rem;
+}
+
+#breadcrumb a,
+b,
+span {
+    text-transform: capitalize;
+}
+
+#breadcrumb p {
+    padding: 0;
+}
+
+#breadcrumb a {
+    text-decoration: none;
+    color: #303036;
+}
+
+@media only screen and (max-width: 500px) {
+    #breadcrumb p {
+        padding-left: 0 !important;
+    }
+}
+#breadcrumbInnerContainer {
+    padding-left: unset !important;
+}

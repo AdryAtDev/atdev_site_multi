@@ -1,0 +1,88 @@
+{
+  "title": {
+    "en": "Recruiting",
+    "es": "Reclutamiento"
+  },
+  "description": {
+    "en": "Recruiting",
+    "es": "Reclutamiento"
+  },
+  "long_description": {
+    "en": "We offer custom software development services with proven and solid recipes for solving your needs in technologies we are expert at.",
+    "es": "Utilizamos nuestro conjunto actual de tecnologías para entregar su idea. Supervisamos todo el ciclo de vida del desarrollo, que incluye la recopilación de requisitos, desarrollo, implementación y capacitación."
+  },
+  "icon": {
+    "en": "person_search",
+    "es": "person_search"
+  },
+  "banner_title": {
+    "en": "We help you build your idea by providing you experts developers with proven hands-on experience.",
+    "es": "Lo ayudamos a construir su idea brindándoles expertos desarrolladores con experiencia práctica comprobada."
+  },
+  "introduction_title": {
+    "en": "We help you with IT Recruiting",
+    "es": "Te ayudamos con el Reclutamiento TI"
+  },
+  "introduction_subtitle": {
+    "en": "Focus on your Ideas, and we help you with IT Recruiting. Our process is divided into 4 stages: <b style='font-family: GothamBold !important;'> Research,  Assessments, Match, and Client Fit.</b>",
+    "es": "Concéntrese en sus ideas y nosotros lo ayudamos con el reclutamiento de TI. Nuestro proceso se divide en 4 etapas: <b style='font-family: GothamBold !important;'> Investigación, Evaluaciones, Match y Client Fit.</b>"
+  },
+  "scheduleACall": {
+    "en": "Schedule a Call",
+    "es": "Agendar Llamada"
+  },
+  "btnHireASpecialist": {
+    "en": "Find your Specialist!",
+    "es": "Contacta Con Nosotros"
+  },
+  "secondCardSection": {
+    "title1": {
+      "en": "Research",
+      "es": "Investigación"
+    },
+	  "subtitle1": {
+      "en": "Based on STEM Careers Candidates emphasizing personal projects development",
+      "es": "Seleccionar candidatos de Carreras STEM, con énfasis en el desarrollo de proyectos personales."
+    },
+	  "description1": {
+      "en": "We design the position with the skills needed and search for candidates aligned with those skill sets we look for. We focus on candidates from STEM careers, emphasizing personal project development.",
+      "es": "Diseñamos el puesto con las habilidades necesarias y buscamos candidatos alineados con esas habilidades que buscamos. Nos enfocamos en candidatos de carreras STEM, enfatizando el desarrollo de proyectos personales."
+    },
+	  "title2": {
+      "en": "Assessments",
+      "es": "Pruebas"
+    },
+	  "subtitle2": {
+      "en": "We validate their communication, Attention to Detail, Math, and Position skills.",
+      "es": "Validamos sus habilidades de comunicación, Atención al detalle, Matemáticas y de Posición."
+    },
+	  "description2": {
+      "en": "Each candidate is evaluated equally, no matter their expertise or year of experience. Our assessments are divided into 2 groups soft skills(communication, motivation, leadership ) and hard skills(Attention, Math, Position Tech skills).",
+      "es": "Cada candidato es evaluado por igual, sin importar su especialidad o año de experiencia. Nuestras evaluaciones se dividen en 2 grupos de habilidades blandas (comunicación, motivación, liderazgo) y habilidades duras (atención, matemáticas, habilidades técnicas de posición)."
+    },
+	  "title3": {
+      "en": "Match",
+      "es": "Compatibilidad"
+    },
+	  "subtitle3": {
+      "en": "We conduct in-depth interviews with candidates and give extra tests if needed",
+      "es": "Realizamos entrevistas en profundidad con los candidatos y realizamos pruebas adicionales si es necesario."
+    },
+	  "description3": {
+      "en": "Interviews with candidates are done by HR professionals and Tech Experts in the position they are being recruited for. Depending on the positions, we also give candidates home test assignments at this stage.",
+      "es": "Las entrevistas con los candidatos son realizadas por profesionales de recursos humanos y expertos en tecnología en el puesto para el que están siendo reclutados. Dependiendo de las posiciones, también damos a los candidatos tareas o proyectos de prueba."
+    },
+	  "title4": {
+      "en": "Client Fit",
+      "es": "Adaptación al Cliente"
+    },
+	  "subtitle4": {
+      "en": "A candidate has passed all our tests at this stage",
+      "es": "Contrata especialistas en las tecnologías que utilizas"
+    },
+	  "description4": {
+      "en": "The client will interview and evaluate candidates who have passed our stages. This means they don’t need to give extra tests resulting in an agile recruiting process.",
+      "es": "En esta etapa el cliente tiene una entrevista con un candidato ha pasado todas nuestras pruebas . Esto significa que no necesitan realizar pruebas adicionales, lo que resulta en un proceso de reclutamiento ágil."
+    }
+  }
+}

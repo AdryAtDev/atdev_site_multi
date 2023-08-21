@@ -1,0 +1,7 @@
+{
+	"layout": "layouts/about/about.njk",
+	"tags": "es, /pages/es/about/",
+	"locale": "es",
+	"dir": "ltr",
+	"aboutLabel": "about"
+}

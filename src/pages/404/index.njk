@@ -1,0 +1,18 @@
+---
+layout: 'layouts/base.njk'
+title: {
+	en: "404",
+	es: "404"
+}
+id: error.html
+pagination:
+    data: languages
+    size: 1
+    alias: language
+permalink: "pages/{{ language.lang | slugify }}/{{id}}"
+---
+
+<main id="error-page" style="position: unset;">
+    <h1>{{title[locale]}}</h1>
+    <h3>{{description[locale]}}</h3>
+</main>

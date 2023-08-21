@@ -1,0 +1,144 @@
+{
+  "pageTitle": {
+    "en": "Home",
+    "es": "Inicio"
+  },
+  "btnLearnMore": {
+    "en": "Learn More",
+    "es": "Aprende Más"
+  },
+  "btnContact": {
+    "en": "Contact Us",
+    "es": "Contáctanos"
+  },
+  "mainBanner": {
+    "title1": {
+      "en": "Build Your Team of Experts",
+      "es": "Construimos tu Equipo"
+    },
+    "description1": {
+      "en": "SR Developers and Tech-Savvy talent close to your team with excellent communication and outstanding tech skills.",
+      "es": "SR Desarrolladores y Talento Experto en TI cerca de tu equipo con excelente comunicación y habilidades tecnológicas sobresalientes."
+    },
+	  "btn1": {
+      "en": "Hire Us",
+      "es": "Contrátanos"
+    },
+	  "title2": {
+      "en": "We Build your Ideas",
+      "es": "Construimos tus Ideas"
+    },
+	  "description2": {
+      "en": "If you have an idea we make it true using, reliable processes in technologies we are, experts at.",
+      "es": "Si tienes una idea la hacemos realidad mediante procesos confiables en tecnologías en las que somos expertos."
+    },
+	  "btn2": {
+      "en": "Hire Us",
+      "es": "Contrátanos"
+    }
+  },
+  "firstSection": {
+    "title1": {
+      "en": "Hire Specialists",
+      "es": "Contrata Especialistas"
+    },
+    "subheading1": {
+      "en": "We Specialize in specific Technologies",
+      "es": "Nos especializamos en tecnologías & posiciones específicas"
+    },
+    "description1_1": {
+      "en": "We offer services of Nearshore Staff Augmentation in these technologies =>",
+      "es": "Ofrecemos servicios de Nearshore Staff Augmentation(Dotación de Personal) en estas tecnologías =>"
+    },
+    "description1_2": {
+      "en": "Alongside the technologies we specialized in, we also specialized in finding <b class='custom-colors'> DevOps, and Business Analysts</b> with exposure to the pre-mentioned technologies.",
+      "es": "Además de las tecnologías en las que nos especializamos, también nos especializamos en encontrar QA, DevOps y Business Analysts con exposición a las tecnologías mencionadas anteriormente."
+    },
+    "title2": {
+      "en": "Build Your idea",
+      "es": "Construye tu Idea"
+    },
+    "subheading2": {
+      "en": "Entrust your most ambitious technology ideas to a group of experts",
+      "es": "Confíe sus ideas tecnológicas más ambiciosas a un grupo de expertos"
+    },
+    "description2_1": {
+      "en": "We use solid and well-known frameworks to build solutions. We analyze side by side with you the needs of your application. We select the proper Tech Stack based on different factors. Those could be the speed of Development(Time to Market), Reliability, Performance, Customer budget, or Customer Technology Preferences.",
+      "es": "Trabajamos con los más altos estándares y con tecnologías probadas. Analizamos lado a lado con usted las necesidades de su aplicación. Seleccionamos el Stack tecnológico adecuado y basado en diferentes factores. Estos pueden ser la velocidad de presupuesto o preferencias tecnológicas del cliente."
+    }
+  },
+  "secondSection": {
+    "title": {
+      "en": "Our Services",
+      "es": "Nuestros Servicios"
+    },
+    "subtitle": {
+      "en": "What We do",
+      "es": "Lo Que Hacemos"
+    }
+  },
+  "thirdSection": {
+    "title": {
+      "en": "FEEDBACK",
+      "es": "FEEDBACK"
+    },
+    "subtitle": {
+      "en": "Testimonials",
+      "es": "Testimonios"
+    }
+  },
+  "reasonsSection": {
+    "title": {
+      "en": "Why Choose Us",
+      "es": "Por Qué Elegirnos"
+    },
+    "subtitle": {
+      "en": "some reasons",
+      "es": "algunas razones"
+    },
+    "reasonTitle1": {
+      "en": "Same Timezone",
+      "es": "Misma Zona Horaria"
+    },
+    "reasonDescription1": {
+      "en": "Located at the center(Dominican Republic) of the LATAM region, we have connections in the whole region that allow us to provide the best talent in the technologies and positions we are experts at.",
+      "es": "Ubicado en el centro (República Dominicana) de la región LATAM, contamos con conexiones en toda la región que nos permiten brindar el mejor talento en las tecnologías en las que somos expertos."
+    },
+    "reasonTitle2": {
+      "en": "We are Specialists",
+      "es": "Somos Especialistas"
+    },
+    "reasonDescription2": {
+      "en": "We build software and provide resources in technologies we are experts at. We specialized in",
+      "es": "Construimos software y proporcionamos recursos en tecnologías que estamos expertos en. Nos especializamos en"
+    },
+    "reasonTitle3": {
+      "en": "Vetted Candidates",
+      "es": "Candidatos Examinados"
+    },
+    "reasonDescription3": {
+      "en": "Candidates, no matter their expertise or years of experience, are evaluated in two main areas: Soft skills (communication, motivation, leadership) and Hard skills(Attention, Math, Position Tech skills). There is no need to give extra tests to candidates.",
+      "es": "Los candidatos, sin importar sus años de experiencia son evaluados por nuestros expertos. No hay necesidad de dar pruebas adicionales a los candidatos."
+    },
+    "reasonTitle4": {
+      "en": "Competitive Rate",
+      "es": "Precio Competitivo"
+    },
+    "reasonDescription4": {
+      "en": "Our mission is to provide you SR Resources at a competitive rate.",
+      "es": "Nuestra misión es proporcionarle recursos probados a un precio competitivo."
+    }
+  },
+  "testimonials": {
+    "author": {
+      "en": "Tony McCune",
+      "es": "Tony McCune"
+    },
+    "description": {
+      "en": "The team at ATDEV is an integral part of our business strategy. Their leadership team is willing to partner with us in strategic planning and resource development, far beyond just staffing current needs. The team they have assembled for us is skilled and have the “whatever it takes” mindset to support our global enterprise client’s high expectations. Our partnership with ATDEV has allowed Synaptic Advisors to confidently grow our business at scale with competitive pricing",
+      "es": "El equipo de ATDEV es parte integral de nuestra estrategia comercial. Su equipo de liderazgo está dispuesto a asociarse con nosotros en la planificación estratégica y el desarrollo de recursos, mucho más allá de las necesidades actuales de personal. El equipo que han reunido para nosotros está capacitado y tiene la mentalidad de 'lo que sea necesario' para respaldar las altas expectativas de nuestro cliente empresarial global. Nuestra asociación con ATDEV ha permitido a Synaptic Advisors hacer crecer nuestro negocio con confianza a escala con precios competitivos"
+    }
+  }
+}
+
+

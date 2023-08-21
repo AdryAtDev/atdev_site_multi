@@ -1,0 +1,24 @@
+---
+layout: 'layouts/base.njk'
+title: {
+	en: "Thanks",
+	es: "Gracias"
+}
+id: thanks.html
+pagination:
+    data: languages
+    size: 1
+    alias: language
+permalink: "pages/{{ language.lang | slugify }}/{{id}}"
+---
+
+{# <div style="margin-top: 6rem !important;">{% include "components/breadcrumbBlock.njk" %}</div> #}
+
+<main id="main-thanks" class="container" style="min-height: 60vh;">
+	<h3 id="h1_text" style="line-height: 3.7rem; color: #444a5b;">{{h1_text[locale] | safe}}</h3>
+	<div style="display: flex; align-items: center; justify-content: start; margin-left: 1rem !important; gap: 2.8rem;">
+		<div class="row d-flex justify-content-center">
+			<a style="width: 280px !important; font-family: 'GothamBook', Metropolis, sans-serif !important; font-weight: bold !important;" onclick="mixpanel.track('Go to Contact Page Button')" href="{{"/pages/" + locale + "/"}}" class="btn btn-w240 ripple" >{{btn_hire_specialist[locale]}}
+		</div>
+	</div>
+</main>

@@ -1,0 +1,15 @@
+{% block indexCSSMinifier %}
+    <!-- capture the CSS content as a Nunjucks variable -->
+    {% set css %}
+    {% include "../../assets/css/style.css" %}
+    {% include "../../assets/css/font-family.css" %}
+    {% include "../../assets/css/custom.css" %}
+    {% include "../../assets/css/breadcrumb.css" %}
+    {% include "../../assets/css/forms.css" %}
+    {% include "../../assets/css/thanks.css" %}
+    {% endset %}
+    <!-- feed it through our cssmin filter to minify -->
+    <style>
+        {{css | cssmin | safe}}
+    </style>
+{% endblock indexCSSMinifier %}

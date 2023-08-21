@@ -1,0 +1,308 @@
+/** @format */
+.content .title {
+	width: 100%;
+	text-align: center;
+}
+
+.title {
+	width: 100%;
+	position: relative;
+	/* margin-bottom: 20px; */
+	margin-bottom: 16px;
+	/* padding-bottom: 25px; */
+	font-weight: 800;
+	font-size: 1.9rem;
+	color: #1074bc;
+}
+/* 
+.title:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+	transform: translateX(-50%);
+	width: 80%;
+	height: 1px;
+	background-color: #f70037;
+	background-color: #3d8ecd;
+}
+.title:after {
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 10%;
+	transform: translateX(-50%);
+	width: 45px;
+	width: 25%;
+	height: 3px;
+	background-color: #f70037;
+	background-color: #3d8ecd;
+} */
+.how-section1 {
+	margin-top: -15%;
+	padding: 10%;
+}
+.how-section1 .row h4 {
+	font-size: 3rem;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1rem;
+	margin-top: 4rem;
+}
+.how-section1 .row .subheading {
+	font-size: 1.2rem;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1.6rem;
+}
+.how-section1 .row p {
+	font-size: 1rem;
+}
+.col-md-6 .how-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100% !important;
+	height: 100% !important;
+}
+.how-img img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100% !important;
+	height: 100% !important;
+}
+.how-section1 h4 {
+	color: #1074bc;
+	font-weight: bold;
+	font-size: 1.875rem;
+}
+.how-section1 .subheading {
+	color: #1074bc;
+	font-size: 1.25rem;
+}
+
+.heading {
+	color: #1074bc;
+}
+
+.heading-sub {
+	color: #1074bc;
+}
+
+.how-section1 .row {
+	margin-top: 10%;
+}
+.how-img {
+	text-align: center;
+}
+.how-img img {
+	width: 40%;
+}
+
+.main-banner-title {
+	/* color: #1074BC; */
+	/* color: white !important; */
+}
+.main-banner-desc {
+	font-size: larger;
+}
+
+/*----------------------------------------*/
+/*    17. Pages - Contact
+/*----------------------------------------*/
+.contact-info .section-title p {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.info {
+	border: 1px solid #ebebeb;
+	padding: 0 32px 32px;
+	text-align: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+@media (max-width: 300px) {
+	.how-section1 .row h4 {
+		font-size: 0.4rem;
+	}
+}
+@media (max-width: 991px) {
+	.how-section1 .row h4 {
+		font-size: 2.2rem;
+	}
+	.info {
+		padding: 0 28px 28px;
+	}
+}
+
+/*----------------------------------------*/
+/*    google - maps
+/*----------------------------------------*/
+.contact-map {
+	height: 500px;
+	width: 100%;
+	display: block;
+}
+
+/*----------------------------------------*/
+/*     fresh - team
+/*----------------------------------------*/
+
+.freshteam {
+	height: 1550px;
+	width: 100%;
+	display: block;
+}
+
+/*----------------------------------------*/
+/*    AdryDev - Rules
+/*----------------------------------------*/
+.btn-language {
+	cursor: pointer;
+}
+
+#error-page {
+	max-width: 100vw;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	padding: 0 10rem;
+	text-align: start;
+	color: #303036;
+	margin-top: -6rem;
+}
+
+#error-page > * {
+	font-weight: 400;
+}
+
+#error-page > h1 {
+	font-size: 4rem;
+}
+
+#error-page > h3 {
+	font-size: 1.9rem;
+	line-height: 3rem;
+}
+
+.single-service {
+	display: flex;
+	flex-direction: column;
+}
+
+.single-service .part-1 {
+	display: flex;
+	align-items: start;
+	justify-content: start;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	gap: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+.single-service .part-1 .title {
+	font-family: 'GothamBold', Metropolis,  sans-serif;
+}
+
+.single-service img {
+	width: 350px;
+	margin: 0;
+	padding: 0;
+}
+
+.single-service .description {
+	font-size: 1rem;
+}
+
+p,
+services-item-desc {
+}
+.btn {
+	width: 240px !important;
+}
+.btn span {
+	font-weight: 500 !important;
+	font-family: 'GothamBook', Metropolis, sans-serif !important;
+}
+
+.how-section1 span {
+	font-size: 0.8rem;
+}
+
+.main-banner-slider-item {
+	/* width: 10vw;
+	height: 4vh;
+	object-fit: contain !important; */
+	/* background-size: cover !important; */
+}
+
+.section .section-14555 .col-12 {
+	text-align: center;
+}
+
+.section .section-14555 .col-12 h2 {
+	color: #1074bc;
+	font-size: 2.5rem;
+}
+
+.item-style {
+	box-shadow: 0.125rem 0.25rem 1.25rem 0.0875rem rgba(45, 45, 45, 0.13) !important;
+}
+
+.custom-BoxShadow {
+	-webkit-box-shadow: 0.125rem 0.25rem 1.25rem 0.0875rem
+		rgba(45, 45, 45, 0.13) !important;
+	box-shadow: 0.125rem 0.25rem 1.25rem 0.0875rem rgba(45, 45, 45, 0.13) !important;
+}
+
+ul li span,
+ul li a {
+	font-family: 'GothamBold', Metropolis, sans-serif !important;
+}
+
+footer ul li span,
+footer ul li a {
+	font-family: 'GothamBook', Metropolis, sans-serif !important;
+}
+
+/* BEGIN BANNERS */
+.main-banner {
+	min-height: unset;
+}
+
+.reduce-banner-height {
+	height: 27.5rem !important;
+}
+
+@media only screen and (max-width: 1281px) {
+	.reduce-banner-height {
+		height: unset !important;
+	}
+
+	.main-banner-desc{
+		margin-bottom: 1rem !important;
+	}
+}
+/* END BANNERS */

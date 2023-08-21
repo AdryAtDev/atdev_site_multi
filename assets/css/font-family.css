@@ -1,0 +1,72 @@
+/* START GOTHAM 2ND */
+ 
+@font-face {
+	font-family: 'GothamBold';
+	src: url(/fonts/GOTHAM2ND/Gotham-Bold.otf) format('opentype');
+}
+@font-face {
+	font-family: 'GothamBoldIta';
+	src: url(/fonts/GOTHAM2ND/Gotham-BoldIta.otf) format('opentype');
+}
+@font-face {
+	font-family: 'GothamBook';
+	src: url(/fonts/GOTHAM2ND/Gotham-Book.otf) format('opentype');
+}
+@font-face {
+	font-family: 'GothamBookIta';
+	src: url(/fonts/GOTHAM2ND/Gotham-BookIta.otf) format('opentype');
+}
+@font-face {
+	font-family: 'GothamLight';
+	src: url(/fonts/GOTHAM2ND/Gotham-Light.otf) format('opentype');
+}
+@font-face {
+	font-family: 'GothamLightIta';
+	src: url(/fonts/GOTHAM2ND/Gotham-LightIta.otf) format('opentype');
+}
+@font-face {
+	font-family: 'GothamMedium';
+	src: url(/fonts/GOTHAM2ND/Gotham-Medium.otf) format('opentype');
+} 
+@font-face {
+	font-family: 'GothamMediumIta';
+	src: url(/fonts/GOTHAM2ND/Gotham-MediumIta.otf) format('opentype');
+}
+/* END GOTHAM 2ND */
+
+/* START GOTHAM ROUNDED */
+@font-face {
+	font-family: 'GothamRoundedBold';
+	src: url(/fonts/GOTHAMROUNDED1ST/GothamRounded-Bold.otf) format('opentype');
+}
+@font-face {
+	font-family: 'GothamRoundedBoldIta';
+	src: url(/fonts/GOTHAMROUNDED1ST/GothamRounded-BoldIta.otf) format('opentype');
+}
+@font-face {
+	font-family: 'GothamRoundedBook';
+	src: url(/fonts/GOTHAMROUNDED1ST/GothamRounded-Book.otf) format('opentype');
+}
+@font-face {
+	font-family: 'GothamRoundedBookIta';
+	src: url(/fonts/GOTHAMROUNDED1ST/GothamRounded-BookIta.otf) format('opentype');
+}
+@font-face {
+	font-family: 'GothamRoundedLight';
+	src: url(/fonts/GOTHAMROUNDED1ST/GothamRounded-Light.otf) format('opentype');
+}
+@font-face {
+	font-family: 'GothamRoundedLightIta';
+	src: url(/fonts/GOTHAMROUNDED1ST/GothamRounded-LightIta.otf) format('opentype');
+}
+@font-face {
+	font-family: 'GothamRoundedMedium';
+	src: url(/fonts/GOTHAMROUNDED1ST/GothamRounded-Medium.otf)
+		format('opentype');
+}
+@font-face {
+	font-family: 'GothamRoundedMediumIta';
+	src: url(/fonts/GOTHAMROUNDED1ST/GothamRounded-MediumIta.otf)
+		format('opentype');
+}
+/* END GOTHAM ROUNDED */

@@ -1,0 +1,80 @@
+{% block servicesFormsTechBlock %}
+    <style>
+		main {
+			overflow-y: unset !important;
+		}
+	</style>
+	<h3>{{technologiesTitle[locale] | safe}}</h3>
+	<input type="hidden" name="technologies" id="technologiesHidden">
+	<div class="services-forms-inner-container technologiesSection">
+		<div class="form-field">
+			<input type="checkbox" class="form-field-input" value="C Sharp" id="cSharp"/>
+			<label for="cSharp">C# </label>
+		</div>
+		
+		<div class="form-field">
+			<input type="checkbox" class="form-field-input" value=".Net Core" id="techNetCore"/>
+			<label for="techNetCore">.Net Core </label>
+		</div>
+
+		<div class="form-field">
+			<input type="checkbox" class="form-field-input" value=".Net Legacy" id="techNetLegacy"/>
+			<label for="techNetLegacy">.Net Legacy </label>
+		</div>
+
+		<div class="form-field">
+			<input type="checkbox" class="form-field-input" value="Javascript" id="techJavascript"/>
+			<label for="techJavascript">Javascript </label>
+		</div>
+		
+		<div class="form-field">
+			<input type="checkbox" class="form-field-input" value="TypeScript" id="techTypeScript"/>
+			<label for="techTypeScript">TypeScript </label>
+		</div>
+		
+		<div class="form-field">
+			<input type="checkbox" class="form-field-input" value="Angular" id="techAngular"/>
+			<label for="techAngular">Angular </label>
+		</div>
+		
+		<div class="form-field">
+			<input type="checkbox" class="form-field-input" value="NodeJs" id="techNode"/>
+			<label for="techNode">NodeJs </label>
+		</div>
+		
+		<div class="form-field">
+			<input type="checkbox" class="form-field-input" value="ReactJs" id="techReact"/>
+			<label for="techReact">ReactJs </label>
+		</div>
+		
+		<div class="form-field">
+			<input type="checkbox" class="form-field-input" value="VueJs" id="techVue"/>
+			<label for="techVue">VueJs </label>
+		</div>
+		
+		<div class="form-field">
+			<input type="checkbox" class="form-field-input" value="Python" id="techPython"/>
+			<label for="techPython">Python </label>
+		</div>
+		
+		<div class="form-field">
+			<input type="checkbox" class="form-field-input" value="Java" id="techJava"/> 
+			<label for="techJava">Java </label>
+		</div>
+		
+		<div class="form-field">
+			<input type="checkbox" class="form-field-input" value="Salesforce" id="techSalesforce"/>
+			<label for="techSalesforce">Salesforce </label>
+		</div>
+														
+		<div class="form-field">
+			<input type="checkbox" class="form-field-input" value="AWS" id="techAws"/>
+			<label for="techAws">AWS </label>
+		</div>
+		
+		<div class="form-field"> 
+			<input type="checkbox" class="form-field-input" value="{{service.selectOther[locale] | safe}}" id="techOther"/>
+			<label for="techOther" >{{service.selectOther[locale] | safe}}</label>
+		</div>
+	</div>
+{% endblock servicesFormsTechBlock %}

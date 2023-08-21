@@ -1,0 +1,64 @@
+{
+  "ourLocation": {
+    "title": {
+      "en": "Our Location",
+      "es": "Nuestras Ubicaciones"
+    },
+    "description": {
+      "en": "Aut: San Isidro, Santo Domingo este. Plaza Coral Mall, Pyhex Work 3",
+      "es": "Aut: San Isidro, Santo Domingo Este. Plaza Coral Mall, Pyhex Work 3"
+    }
+  },
+  "giveUsACall": {
+    "title": {
+      "en": "Give Us A Call",
+      "es": "Llámanos"
+    },
+    "description": {
+      "en": "809-568-3277",
+      "es": "809-568-3277"
+    }
+  },
+  "contactEmail": {
+	  "title": {
+      "en": "Contact Email",
+      "es": "Email de contacto"
+    },
+	  "description": {
+      "en": "info@atdev.do",
+      "es": "info@atdev.do"
+    }
+  },
+  "contact": {
+    "title": {
+      "en": "Contact",
+      "es": "Contactos"
+    },
+	  "description": {
+      "en": "To get started, connect with us today.",
+      "es": "Para comenzar, conéctese con nosotros hoy."
+    },
+	  "inputName": {
+      "en": "Your Name",
+      "es": "Su nombre"
+    },
+	  "inputPhone": {
+      "en": "Your Phone",
+      "es": "Su teléfono"
+    },
+	  "inputEmail": {
+      "en": "Your Email",
+      "es": "Tu correo electrónico"
+    },
+	  "inputMessage": {
+      "en": "Your Message",
+      "es": "Tu mensaje"
+    },
+	  "btnSendMessage": {
+      "en": "Send Message",
+      "es": "Enviar Mensaje"
+    }
+  }
+}
+
+

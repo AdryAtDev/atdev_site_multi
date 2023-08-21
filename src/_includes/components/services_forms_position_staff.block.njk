@@ -1,0 +1,25 @@
+{% block servicesFormsPositionStaffBlock %}
+    <style>
+		main{
+			overflow-y: unset !important;
+		}
+	</style>
+	<div class="services-forms-inner-container">
+		<div class="form-field">
+			<h3>{{positionInterestedIn[locale] | safe}}</h3>
+			<label class="services-forms-radio-position-label" for="servicesFormsPositionRadioStaff">
+				<select class="custom-form-field-input" id="servicesFormsPositionRadioStaff" name="position[]">
+					<option value="">{{service.selectOption[locale] | safe}}</option>
+					<option value="Software Developer">Software Developer</option>
+					<option value="Software QA">Software QA</option>
+					<option value="Project Manager">Project Manager</option>
+					<option value="Business Analyst">Business Analyst</option>
+					<option value="DevOps Engineer">DevOps Engineer</option>
+					<option value="IT Security Specialist">IT Security Specialist</option>
+					<option value="IT Staff">IT Staff</option>
+					<option value="Other">{{service.selectOther[locale] | safe}}</option>
+				</select>
+			</label>
+		</div>
+	</div>
+{% endblock servicesFormsPositionStaffBlock %}
