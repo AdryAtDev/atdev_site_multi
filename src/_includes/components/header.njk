@@ -4,7 +4,7 @@
         <div class="mob-main-mnu-content">
             <ul class="mob-main-mnu-list">
                 <li>
-                    <a onclick="mixpanel.track('Go Home button')" href="/pages/{{locale}}/" data-title="{{ navigation.header_links[locale][0].label }}">
+                    <a onclick="mixpanel.track('Go Home button')" href="/pages/{{locale}}/home.html" data-title="{{ navigation.header_links[locale][0].label }}">
                         <span style="font-weight: bold;">{{ navigation.header_links[locale][0].label }}</span>
                     </a>
                 </li>
@@ -39,7 +39,7 @@
                     </div>
                     <div class="col-auto header-fixed-col">
                         <!-- Begin logo -->
-                        <a onclick="mixpanel.track('Go Home Button')" href="/pages/{{locale}}/" class="logo logo-ico-widht-text" title="ATDEV">
+                        <a onclick="mixpanel.track('Go Home Button')" href="/pages/{{locale}}/{{id | safe}}" class="logo logo-ico-widht-text" title="ATDEV">
                             <img class="lazy logo-ico" data-src="/img/logo.png" zwidth="36" height="35" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
                             <span class="logo-text"></span>
                         </a>
@@ -51,7 +51,7 @@
                                 <nav class="main-mnu">
                                     <ul class="main-mnu-list">
                                         <li>
-                                            <a onclick="mixpanel.track('Go Home Button')" href="/pages/{{locale}}/" data-title="{{ navigation.header_links[locale][0].label }}">
+                                            <a onclick="mixpanel.track('Go Home Button')" href="/pages/{{locale}}/{{id | safe}}" data-title="{{ navigation.header_links[locale][0].label }}">
                                                 <span style="font-weight: bold;">{{ navigation.header_links[locale][0].label }}</span>
                                             </a>
                                         </li>
