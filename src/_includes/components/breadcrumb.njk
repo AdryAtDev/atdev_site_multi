@@ -1,28 +1,21 @@
 {% block breadcrumbw %}
     {% set home_link = "/pages/" + locale + "/" %}
+	{% if isParent == true   %}
+		{% set isChild = false %}
+	{% endif %}
     {# BEGIN MATERIAL ICONS - HOME #}
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200"/>
 	{# END MATERIAL ICONS - HOME #}
 
 	<div id="breadcrumbInnerContainer" class="container">
 		<div id="breadcrumb">
-			{% if service.isParent == true %}
+			{% if isChild == true %}
 				<p>
 					<a href="{{ home_link | safe}}" style="padding-bottom: 1.6rem !important;">
 						<img src="/icons/home.svg" alt="" style="height: 1rem; margin-top: -0.2rem"/>
 					</a>
 					<span>></span>
-					<a href="{{ service.link[locale] }}" style="padding-bottom: 1.6rem !important;">{{ service.label[locale] }}</a>
-					<span>></span>
-					<b style="font-family: GothamBold,  Lato, 'GothamBook', 'Plus Jakarta Sans', sans-serif;">{{title[locale] | capitalize }}</b>
-				</p>
-			{% elif about.isParent == true  %}
-                <p>
-					<a href="{{ home_link | safe}}" style="padding-bottom: 1.6rem !important;">
-						<img src="/icons/home.svg" alt="" style="height: 1rem; margin-top: -0.2rem"/>
-					</a>
-					<span>></span>
-					<a href="{{ about.link[locale] }}" style="padding-bottom: 1.6rem !important;">{{ about.label[locale] | capitalize }}</a>
+					<a href="{{ parentLink[locale] }}" style="padding-bottom: 1.6rem !important;">{{ parentLabel[locale] }}</a>
 					<span>></span>
 					<b style="font-family: GothamBold,  Lato, 'GothamBook', 'Plus Jakarta Sans', sans-serif;">{{title[locale] | capitalize }}</b>
 				</p>

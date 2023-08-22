@@ -1,4 +1,13 @@
 {
+  "isChild": true,
+  "parentLabel": {
+    "en": "About Us",
+    "es": "Sobre Nosotros"
+  },
+  "parentLink": {
+    "en": "/pages/en/about",
+    "es": "/pages/es/about"
+  },
   "title": {
     "en": "About Us",
     "es": "Sobre Nosotros"

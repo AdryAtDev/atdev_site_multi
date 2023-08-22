@@ -1,4 +1,13 @@
 {
+  "isChild": true,
+  "parentLabel": {
+    "en": "Services",
+    "es": "Servicios"
+  },
+  "parentLink": {
+    "en": "/pages/en/services",
+    "es": "/pages/es/services"
+  },
   "title": {
     "en": "Services",
     "es": "Servicios"
