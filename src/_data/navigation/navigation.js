@@ -68,14 +68,14 @@ const translated_links = {
 	en: {
 		home: '/pages/en/',
 		services: '/pages/en/services',
-		careers: '/pages/en/careersus',
+		careers: '/pages/en/careers',
 		about: '/pages/en/about',
 		contact: '/pages/en/contact',
 	},
 	es: {
 		home: '/pages/es/',
 		services: '/pages/es/services',
-		careers: '/pages/es/careersus',
+		careers: '/pages/es/careers',
 		about: '/pages/es/about',
 		contact: '/pages/es/contact',
 	},
@@ -102,8 +102,8 @@ module.exports = {
 			es: 'Servicios',
 		},
 		link: {
-			en: '/pages/en/service',
-			es: '/pages/es/service',
+			en: '/pages/en/services',
+			es: '/pages/es/services',
 		},
 		translated_link: {
 			en: translated_links.en.services,
@@ -117,8 +117,8 @@ module.exports = {
 			es: 'Carreras',
 		},
 		link: {
-			en: '/pages/en/careersus',
-			es: '/pages/es/careersus',
+			en: '/pages/en/careers',
+			es: '/pages/es/careers',
 		},
 		translated_link: {
 			en: translated_links.en.careers,
