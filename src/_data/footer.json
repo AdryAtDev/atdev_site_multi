@@ -1,0 +1,46 @@
+{
+	"begin_company_info": {
+		"footer_company_desc": {
+			"en": "ATDEV is a company that focuses on providing Cloud Software Solutions and Nearshore Staff Augmentation. Founded in 2016 with the premise of helping every company to fulfill the full potential of cloud computing.",
+			"es": "ATDEV es una empresa que se enfoca en brindar Soluciones de Software en la Nube y Aumento de Personal Nearshore. Fundada en 2016 con la premisa de ayudar a todas las empresas a desarrollar todo el potencial de la computación en la nube."
+		}
+	},
+	"footer_item_menu": {
+		"title": {
+			"en": "Menu",
+			"es": "Menú"
+		}
+	},
+	"footer_item_what_we_offer": {
+		"title": {
+			"en": "What We Offer",
+			"es": "Lo Que Ofrecemos"
+		}
+	},
+	"footer_item_about": {
+		"title": {
+			"en": "Who We Are",
+			"es": "Quienes Somos"
+		}
+	},
+	"footer_item_our_contacts": {
+		"title": {
+			"en": "Our Contacts",
+			"es": "Nuestros Contactos"
+		}
+	},
+	"footer_bottom": {
+		"terms": {
+			"en": "Terms and Conditions",
+			"es": "Términos y Condiciones" 
+		},
+		"privacy": {
+			"en": "Privacy Policy",
+			"es": "Política de Privacidad"
+		},
+		"copyright": {
+			"en": "© 2023 ATDEV. All rights reserved.",
+			"es": "© 2023 ATDEV. Reservados todos los derechos."
+		}
+	}
+}
