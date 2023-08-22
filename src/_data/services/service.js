@@ -1,5 +1,3 @@
-/** @format */
-
 const navigation = require('../navigation/navigation')
 const service_app_development = require('./service_app_development')
 const service_nearshore = require('./service_nearshore')

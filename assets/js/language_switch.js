@@ -1,4 +1,3 @@
-/** @format */
 // HTML ELEMENTS
 // const html = document.getElementById('html')
 // const btn_language = document.getElementsByClassName('btn-language')

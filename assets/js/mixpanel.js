@@ -1,5 +1,3 @@
-/** @format */
-
 ;(function (e, b) {
   if (!b.__SV) {
     var a, f, i, g
