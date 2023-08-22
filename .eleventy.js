@@ -5,45 +5,8 @@ const { EleventyI18nPlugin } = require('@11ty/eleventy')
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.setQuietMode(true)
-
-	eleventyConfig.addFilter('cssmin', function (code) {
-		return new CleanCSS({}).minify(code).styles
-	})
-
-	eleventyConfig.addNunjucksAsyncFilter(
-		'jsmin',
-		async function (code, callback) {
-			try {
-				const minified = await minify(code)
-				callback(null, minified.code)
-			} catch (err) {
-				console.error('Terser error: ', err)
-				// Fail gracefully.
-				callback(null, code)
-			}
-		}
-	)
-
-	eleventyConfig.addTransform('htmlmin', function (content) {
-		// Prior to Eleventy 2.0: use this.outputPath instead
-		if (this.page.outputPath && this.page.outputPath.endsWith('.html')) {
-			let minified = htmlmin.minify(content, {
-				useShortDoctype: true,
-				removeComments: true,
-				collapseWhitespace: true,
-			})
-			return minified
-		}
-
-		return content
-	})
-
-	// PLUGIN
-	eleventyConfig.addPlugin(EleventyI18nPlugin, {
-		defaultLanguage: 'en', // Required
-	})
-
-	// ALIAS
+	eleventyConfig.addPlugin(EleventyI18nPlugin, { defaultLanguage: 'en'})
+	
 	eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
 
 	eleventyConfig.addPassthroughCopy({ 'assets/css': 'css' })
@@ -52,12 +15,29 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({ 'assets/icons': 'icons' })
 	eleventyConfig.addPassthroughCopy({ 'assets/js': 'js' })
 	eleventyConfig.addPassthroughCopy({ 'assets/fonts': 'fonts' })
-	eleventyConfig.addPassthroughCopy({
-		'src/_data': 'data',
+	eleventyConfig.addPassthroughCopy({ 'src/_data': 'data' })
+
+	eleventyConfig.addFilter('cssmin', function (code) {
+		return new CleanCSS({}).minify(code).styles
 	})
-	// eleventyConfig.addPassthroughCopy("assets/img");
-	// eleventyConfig.addPassthroughCopy("assets/js");
-	// eleventyConfig.addPassthroughCopy("assets/fonts");
+
+	eleventyConfig.addNunjucksAsyncFilter('jsmin', async function (code, callback) {
+		try {
+			const minified = await minify(code)
+			callback(null, minified.code)
+		} catch (err) {
+			console.error('Terser error: ', err)
+			callback(null, code)
+		}
+	})
+
+	eleventyConfig.addTransform('htmlmin', function (content) {
+		if (this.page.outputPath && this.page.outputPath.endsWith('.html')) {
+			let minified = htmlmin.minify(content, { useShortDoctype: true, removeComments: true, collapseWhitespace: true })
+			return minified
+		}
+		return content
+	})
 
 	// START IGNORING FILES
 	eleventyConfig.ignores.add('_site')
