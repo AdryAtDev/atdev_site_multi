@@ -1,4 +1,15 @@
 {
+  "about": {
+    "label": {
+      "en": "About Us",
+      "es": "Sobre nosotros"
+    },
+    "link": {
+      "en": "/pages/en/about/",
+      "es": "/pages/es/about/"
+    },
+    "isParent": true
+  },
   "title": {
     "en": "Our Team",
     "es": "Nuestro Equipo"

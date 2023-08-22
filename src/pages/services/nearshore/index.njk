@@ -78,7 +78,7 @@ permalink: "pages/{{ language.lang | slugify }}/{{id}}"
 <!-- Begin main content -->
 <div class="main-content">
 	<div class="container">
-		{# <div>{% include "components/breadcrumbBlock.njk" %}</div> #}
+	{% include "components/breadcrumb.njk" %}
 		<div>
 			<h1 class="font-weight-light" class="banner_title" style="color: #1074BE; margin-bottom: 0;">{{introduction_title[locale]}}</h1>
 			<p class="lead sub_banner_title" style="color: #1074BE;">{{introduction_subtitle[locale] | safe}}</p>

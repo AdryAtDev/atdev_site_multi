@@ -1,4 +1,15 @@
 {
+  "service": {
+		"label": {
+		  "en": "Services",
+		  "es": "Servicios"
+		},
+		"link": {
+		  "en": "/pages/en/services/",
+		  "es": "/pages/es/services/"
+		},
+		"isParent": true
+	  },
   "title": {
     "en": "Nearshore Staff Augmentation",
     "es": "Dotación de Personal"

@@ -1,39 +1,40 @@
-{% macro breadcrumb(page_title, service, home_link, services_link, about, aboutLink) %}
-	{# BEGIN MATERIAL ICONS - HOME #}
+{% block breadcrumbw %}
+    {% set home_link = "/pages/" + locale + "/" %}
+    {# BEGIN MATERIAL ICONS - HOME #}
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200"/>
 	{# END MATERIAL ICONS - HOME #}
 
 	<div id="breadcrumbInnerContainer" class="container">
 		<div id="breadcrumb">
-			{% if service != undefined %}
+			{% if service.isParent == true %}
 				<p>
-					<a href="{{ home_link }}" style="padding-bottom: 1.6rem !important;">
+					<a href="{{ home_link | safe}}" style="padding-bottom: 1.6rem !important;">
 						<img src="/icons/home.svg" alt="" style="height: 1rem; margin-top: -0.2rem"/>
 					</a>
 					<span>></span>
-					<a href="{{ services_link }}" style="padding-bottom: 1.6rem !important;">{{ service | capitalize }}</a>
+					<a href="{{ service.link[locale] }}" style="padding-bottom: 1.6rem !important;">{{ service.label[locale] }}</a>
 					<span>></span>
-					<b style="font-family: GothamBold,  Lato, 'GothamBook', 'Plus Jakarta Sans', sans-serif;">{{ page_title | capitalize }}</b>
+					<b style="font-family: GothamBold,  Lato, 'GothamBook', 'Plus Jakarta Sans', sans-serif;">{{title[locale] | capitalize }}</b>
 				</p>
-			{% elif about != undefined  %}
-				<p>
-					<a href="{{ home_link }}" style="padding-bottom: 1.6rem !important;">
+			{% elif about.isParent == true  %}
+                <p>
+					<a href="{{ home_link | safe}}" style="padding-bottom: 1.6rem !important;">
 						<img src="/icons/home.svg" alt="" style="height: 1rem; margin-top: -0.2rem"/>
 					</a>
 					<span>></span>
-					<a href="{{ aboutLink }}" style="padding-bottom: 1.6rem !important;">{{ about | capitalize }}</a>
+					<a href="{{ about.link[locale] }}" style="padding-bottom: 1.6rem !important;">{{ about.label[locale] | capitalize }}</a>
 					<span>></span>
-					<b style="font-family: GothamBold,  Lato, 'GothamBook', 'Plus Jakarta Sans', sans-serif;">{{ page_title | capitalize }}</b>
+					<b style="font-family: GothamBold,  Lato, 'GothamBook', 'Plus Jakarta Sans', sans-serif;">{{title[locale] | capitalize }}</b>
 				</p>
 			{% else %}
 				<p>
-					<a href="{{ home_link }}" style="padding-bottom: 1.6rem !important;">
+					<a href="{{ home_link | safe}}" style="padding-bottom: 1.6rem !important;">
 						<img src="/icons/home.svg" alt="img" style="height: 1rem; margin-top: -0.2rem"/>
 					</a>
 					<span>></span>
-					<b style="font-family: GothamBold,  Lato, 'GothamBook', 'Plus Jakarta Sans', sans-serif;">{{ page_title | capitalize }}</b>
+					<b style="font-family: GothamBold,  Lato, 'GothamBook', 'Plus Jakarta Sans', sans-serif;">{{title[locale] | capitalize }}</b>
 				</p>
 			{% endif %}
 		</div>
 	</div>
-{% endmacro %}
+{% endblock breadcrumbw %}
