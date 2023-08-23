@@ -26,8 +26,8 @@ In this web page you'll get to know a bit about us, what we offer and what we ar
 
 ### Screenshot
 
-![Web Page Home](./assets/img/design/Home.png)
-![Web Page Inicio](./assets/img/design/Inicio.png)
+![Web Page Nearshore](./assets/img/design/nearshore.png)
+![Web Page Recruiting](./assets/img/design/recruiting.png)
 
 ## Social Media
 
