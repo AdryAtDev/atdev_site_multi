@@ -41,9 +41,7 @@ In this web page you'll get to know a bit about us, what we offer and what we ar
 ### Built with
 
 -   Semantic HTML5 markup
--   CSS custom properties
--   CSS Grid
--   Flexbox
+-   Advanced CSS techniques
 -   [11ty](https://www.11ty.dev/) - Static Site Generator
 
 ### Useful resources
@@ -56,36 +54,52 @@ In this web page you'll get to know a bit about us, what we offer and what we ar
 
 ```.
 ├── assets
-├── lng
+    ├── css
+    ├── fonts
+    ├── icons
+    ├── img
+    ├── js
+    └── logos
 └── src
     ├── _data
+        ├── about
         ├── navigation
         └── services
     ├── _includes
+        ├── components
         └── layouts
-    ├── pages
-        ├── en
-        └── es
-    └── services
-        ├── en
-        └── es
+    └── pages
+        ├── 404
+        ├── about
+            ├── faq
+            ├── our-story
+            └── our-team
+        ├── careers
+        ├── contact
+        ├── home
+        ├── services
+            ├── app-development
+            ├── forms
+            ├── nearshore
+            └── recruiting
+        └── thanks
 ```
 
 ### Run Application
 
-#### NPM
-
-##### Install dependencies
+#### Install dependencies
 
 ###### Downloads and install all the required modules
 
 ```.
 npm install
+or
+npm i
 ```
 
-##### Working locally
+#### Working locally
 
-###### Starts watch tasks to compile when changes detected
+##### Starts the development server (check the script in the package.json file)
 
 ```.
 npm run dev
@@ -93,8 +107,16 @@ npm run dev
 
 #### Creating a production build
 
-###### Generates the files used in production
+##### Generates the files used in production
 
 ```.
 npm run build
+```
+
+### Todo File
+
+#### Install the extension: Todo List - saber2pr.top
+
+```.
+https://marketplace.visualstudio.com/items?itemName=saber2pr.todolist
 ```
